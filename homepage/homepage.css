@@ -58,7 +58,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 5%;
+    padding: 2% 5% 0 5%;
 }
 
 .about .video-container {
@@ -308,6 +308,11 @@ body {
 }
 
 /* smth */
+#music {
+    padding-top: 10px;
+    text-align: center;
+}
+
 
 
 @media (max-width: 991.98px) {
