@@ -124,7 +124,8 @@ body {
     color: #fff;
 }
 .gallery {
-    padding: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 
@@ -139,7 +140,6 @@ body {
 }
 
 .gallery .box img {
-    
     width: 100%;
     border-radius: 2rem;
     margin-bottom: 1rem;
@@ -159,7 +159,78 @@ body {
     color:#fff; 
 }
 
+.review {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 5% 5% 5%;
 
+}
+
+.review .content {
+    flex: 1 1 42rem;
+}
+.review .content span{
+    font-size: 3rem;
+    color: #29d9d5;
+}
+.review .content h3{
+    font-size: 5rem;
+    color: #fff;
+
+}
+.review .content p{
+    font-size: 1.8rem;
+    color: grey;
+    padding: 1rem 0;
+    line-height: 2;
+}
+.review .box-container {
+    flex: 1 1 42rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem;
+}
+
+.review .box {
+    flex: 1 1 20rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    background-color: #15214d;
+    transition: border-color 0.9s ease;
+}
+
+.review .box:hover {
+    border: 2px solid blue;
+}
+
+
+.review .box p {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+    line-height: 2;
+    color: grey;
+}
+.review .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.review .box .user img{
+        height: 15rem;
+        border-radius: 10px;
+        
+}
+.review .box .user h3{
+    font-size: 3.5rem;
+     color: #fff;
+}
+.review .box .user span{
+    font-size: 2rem;
+     color: grey ;
+}
 
 
 
