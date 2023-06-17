@@ -54,7 +54,79 @@ body {
     background: #29d9d5;
 }
 
+/* -------------Navbar-------------- */
+.icon-image {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
 
+.navbar-brand {
+    font-size: 27px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+}
+
+.navbar-dark .btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.navbar {
+    background-color: #202B53;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand,
+.navbar-dark .btn {
+    color: darkcyan;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .btn:hover {
+    color: lightcyan;
+}
+
+.navbar-dark .btn {
+    border-color: darkcyan;
+    ;
+}
+
+.navbar-dark .btn:hover {
+    border-color: darkcyan;
+    background-color: darkcyan;
+}
+
+.navbar-toggler {
+    background-color: darkcyan;
+    border-color: darkcyan;
+}
+
+.btn-mobile,
+.btn-desktop {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .btn-mobile {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-desktop {
+        display: inline-block;
+        margin-left: auto;
+    }
+}
+
+
+/* -------------music------------- */
 #music {
     padding-top: 2%;
     text-align: center;
@@ -77,6 +149,7 @@ body {
     text-align: center;
 }
 
+/* ------------- why us ------------- */
 .about {
     display: flex;
     align-items: center;
@@ -119,7 +192,7 @@ body {
 
 .about .content span {
     color: #29d9d5;
-    font-size: 7rem;
+    font-size: 2rem;
 }
 
 .about .content h3 {
@@ -136,7 +209,7 @@ body {
 
 }
 
-
+/* -------------gallery------------- */
 
 .heading {
     text-align: center;
@@ -179,7 +252,7 @@ body {
 }
 
 .gallery {
-    padding: 5%;
+    padding: 0 5% 0 5;
 }
 
 .gallery .btn {
@@ -189,7 +262,7 @@ body {
     padding: 30px;
     width: 350px;
     height: 40px;
-    margin: 0 auto 20px; 
+    margin: 0 auto 20px;
 
 }
 
@@ -226,6 +299,7 @@ body {
     color: #fff;
 }
 
+/* -------------about us------------- */
 
 .review {
     display: flex;
@@ -309,7 +383,8 @@ body {
     color: rgb(239, 236, 236);
 }
 
-/* banner */
+
+/* -------------banner------------- */
 .banner {
     background-image: url(img/bali-2698078_12802.jpg);
     height: auto;
@@ -343,7 +418,6 @@ body {
 
 }
 
-
 @media (max-width: 450px) {
     html {
         font-size: 50%;
@@ -360,79 +434,7 @@ body {
 }
 
 
-/* -------------Navbar-------------- */
-.icon-image {
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
 
-.navbar-brand {
-    font-size: 27px;
-}
-
-.navbar-nav .nav-link {
-    font-size: 18px;
-}
-
-.navbar-dark .btn {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 18px;
-}
-
-.navbar {
-    background-color: #202B53;
-}
-
-.navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-brand,
-.navbar-dark .btn {
-    color: darkcyan;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-brand:hover,
-.navbar-dark .btn:hover {
-    color: lightcyan;
-}
-
-.navbar-dark .btn {
-    border-color: darkcyan;
-    ;
-}
-
-.navbar-dark .btn:hover {
-    border-color: darkcyan;
-    background-color: darkcyan;
-}
-
-.navbar-toggler {
-    background-color: darkcyan;
-    border-color: darkcyan;
-}
-
-.btn-mobile,
-.btn-desktop {
-    display: none;
-}
-
-/* smth */
-
-
-@media (max-width: 991.98px) {
-    .btn-mobile {
-        display: inline-block;
-    }
-}
-
-@media (min-width: 992px) {
-    .btn-desktop {
-        display: inline-block;
-        margin-left: auto;
-    }
-}
 
 /* -------------Footer--------------- */
 .footer {
