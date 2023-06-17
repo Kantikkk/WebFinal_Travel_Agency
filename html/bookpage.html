@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../styles/bookpage.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1iL4cp4E8fizv+2KCXp8q" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1iL4cp4E8fizv+2KCXp8q" crossorigin="anonymous"></script>
   <title>Tour Agency</title>
   <link rel="icon" href="../images/icons8-paper-plane-94.png" type="image/x-icon">
 </head>
+
 <body>
-    <!---------------Navbar----------------->
+  <!---------------Navbar----------------->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
     <div class="container">
       <a class="navbar-brand" href="../index.html">
         <img src="../images/icons8-paper-plane-94.png" alt="Logo" class="icon-image"> Logo
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -33,21 +39,25 @@
         </ul>
         <div class="d-lg-flex align-items-center">
           <a class="btn btn-outline-light rounded-pill btn-mobile d-lg-none" href="../html/bookpage.html">Book Now!</a>
-          <a class="btn btn-outline-light rounded-pill btn-desktop d-none d-lg-inline-block" href="../html/bookpage.html">Book Now!</a>
+          <a class="btn btn-outline-light rounded-pill btn-desktop d-none d-lg-inline-block" id="music-toggle"
+            type="button">
+            <i class="fas fa-music"></i>
+          </a>
+
         </div>
       </div>
     </div>
   </nav>
 
-   <!---------------Main---------------
+  <!---------------Main---------------
         Добавьте сюда ваш код: -->
   <div class="container">
     <h1>TITLE</h1>
     <p>Something...</p>
   </div>
 
-  
-   <!---------------Footer----------------->
+
+  <!---------------Footer----------------->
   <footer class="footer bg-dark-blue">
     <hr>
     <div class="container">
@@ -55,14 +65,16 @@
     </div>
     <hr>
   </footer>
+  <script src="./script.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    $(document).ready(function() {
-      $('.navbar-toggler').on('click', function() {
+    $(document).ready(function () {
+      $('.navbar-toggler').on('click', function () {
         $('.btn-mobile').toggleClass('d-none');
       });
     });
   </script>
 </body>
+
 </html>

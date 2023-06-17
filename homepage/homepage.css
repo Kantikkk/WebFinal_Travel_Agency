@@ -126,29 +126,6 @@ body {
 }
 
 
-/* -------------music------------- */
-#music {
-    padding-top: 2%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-family: ubuntu;
-}
-
-#music-toggle {
-    cursor: pointer;
-    padding-top: 20px;
-}
-
-.music-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 /* ------------- why us ------------- */
 .about {
     display: flex;
