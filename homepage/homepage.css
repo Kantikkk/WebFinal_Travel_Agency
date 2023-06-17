@@ -9,7 +9,6 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -46,11 +45,36 @@ body {
     border-radius: 5rem;
     cursor: pointer;
     background: none;
+    box-shadow: 0 0 10px rgba(133, 138, 144, 0.3);
+
 }
 
 .btn:hover {
     color: #111;
     background: #29d9d5;
+}
+
+
+#music {
+    padding-top: 2%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: ubuntu;
+}
+
+#music-toggle {
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.music-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .about {
@@ -109,54 +133,97 @@ body {
     font-size: 1.4rem;
     color: grey;
     line-height: 2;
-    
+
 }
-.heading{
+
+
+
+.heading {
     text-align: center;
     margin-bottom: 2rem;
 }
-.heading span{
-    color:#29d9d5;
+
+.heading span {
+    color: #29d9d5;
     font-size: 2rem;
 }
-.heading h1{
+
+.heading h1 {
     font-size: 4rem;
     color: #fff;
 }
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse-animation 1.5s ease-in-out infinite;
+}
+
+
+#myDIV {
+    display: none;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
 .gallery {
     padding: 5%;
 }
 
+.gallery .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 350px;
+    height: 40px;
+    margin: 0 auto 20px; 
+
+}
 
 .gallery .box-container {
     columns: 3 25rem;
     column-gap: 1.5rem;
+
 }
- 
+
 .gallery .box {
     margin-bottom: 1rem;
     break-inside: avoid;
 }
 
 .gallery .box img {
-    
+
     width: 100%;
     border-radius: 2rem;
     margin-bottom: 1rem;
 }
 
 .gallery .box img:hover {
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-      }
-.gallery .box span {
-    font-size: 1.4rem;
-    color: grey; 
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
+
+.gallery span {
+    font-size: 2rem;
+}
+
 .gallery .box h3 {
     margin-top: .5rem;
     font-size: 2em;
-    color:#fff; 
+    color: #fff;
 }
 
 
@@ -167,26 +234,31 @@ body {
     gap: 2rem;
     padding: 0 5% 5% 5%;
 
+
 }
 
 .review .content {
     flex: 1 1 42rem;
 }
-.review .content span{
+
+.review .content span {
     font-size: 3rem;
     color: #29d9d5;
 }
-.review .content h3{
+
+.review .content h3 {
     font-size: 5rem;
     color: #fff;
 
 }
-.review .content p{
+
+.review .content p {
     font-size: 1.8rem;
     color: grey;
     padding: 1rem 0;
     line-height: 2;
 }
+
 .review .box-container {
     flex: 1 1 42rem;
     display: flex;
@@ -197,7 +269,7 @@ body {
 .review .box {
     flex: 1 1 20rem;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #15214d;
     transition: border-color 0.9s ease;
 }
@@ -213,24 +285,62 @@ body {
     line-height: 2;
     color: grey;
 }
-.review .box .user{
+
+.review .box .user {
     display: flex;
     align-items: center;
     gap: 1rem;
-    
+
 }
-.review .box .user img{
-        height: 15rem;
-        border-radius: 10px;
-        
+
+.review .box .user img {
+    height: 15rem;
+    border-radius: 10px;
+
 }
-.review .box .user h3{
+
+.review .box .user h3 {
     font-size: 3.5rem;
-     color: #fff;
+    color: #fff;
 }
-.review .box .user span{
+
+.review .box .user span {
+    font-size: 14px;
+    color: rgb(239, 236, 236);
+}
+
+/* banner */
+.banner {
+    background-image: url(img/bali-2698078_12802.jpg);
+    height: auto;
+    background: linear-gradient(black grey), no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+    background-attachment: fixed;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.banner .content span {
+
+    color: #29d9d5;
     font-size: 2rem;
-     color: grey ;
+
+}
+
+.banner .content h3 {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.banner .content p {
+
+    font-size: 1.4rem;
+    color: #fff;
+
 }
 
 
@@ -248,83 +358,83 @@ body {
     background-color: #0F1838;
     color: darkcyan;
 }
-  
+
 
 /* -------------Navbar-------------- */
 .icon-image {
     width: 24px;
     height: 24px;
     vertical-align: middle;
-    margin-right: 5px; 
- }
+    margin-right: 5px;
+}
 
 .navbar-brand {
-    font-size: 27px; 
+    font-size: 27px;
 }
 
 .navbar-nav .nav-link {
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .navbar-dark .btn {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 18px; 
-} 
+    font-size: 18px;
+}
 
 .navbar {
     background-color: #202B53;
 }
-  
+
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-brand,
 .navbar-dark .btn {
-  color: darkcyan;
+    color: darkcyan;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .btn:hover {
-  color: lightcyan;
+    color: lightcyan;
 }
 
 .navbar-dark .btn {
-    border-color: darkcyan;; 
-  }
-  
+    border-color: darkcyan;
+    ;
+}
+
 .navbar-dark .btn:hover {
     border-color: darkcyan;
     background-color: darkcyan;
 }
 
 .navbar-toggler {
-    background-color: darkcyan; 
+    background-color: darkcyan;
     border-color: darkcyan;
 }
 
 .btn-mobile,
 .btn-desktop {
-  display: none;
+    display: none;
 }
 
 /* smth */
 
 
 @media (max-width: 991.98px) {
-  .btn-mobile {
-    display: inline-block;
-  }
+    .btn-mobile {
+        display: inline-block;
+    }
 }
 
 @media (min-width: 992px) {
-  .btn-desktop {
-    display: inline-block;
-    margin-left: auto;
-  }
+    .btn-desktop {
+        display: inline-block;
+        margin-left: auto;
+    }
 }
 
 /* -------------Footer--------------- */
 .footer {
     background-color: #15214d;
 }
-  
