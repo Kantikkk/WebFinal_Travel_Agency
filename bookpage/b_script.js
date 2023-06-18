@@ -91,25 +91,13 @@ $(document).ready(function() {
       var startDate = new Date($(this).val());
       var endDate = new Date($("#endDate").val());
 
-      
-      var today = new Date();
-      if (startDate < today) {
-        $(this).val(""); 
-        $(this).addClass("is-invalid");
-        $(this).siblings(".invalid-feedback").text("Start date cannot be in the past.");
-      } else {
-        $(this).removeClass("is-invalid");
+      var today = new Date().toISOString().split("T")[0];
 
-        
-        if (endDate < startDate) {
-          $("#endDate").val(""); 
-          $("#endDate").addClass("is-invalid");
-          $("#endDate").siblings(".invalid-feedback").text("End date cannot be before start date.");
-        } else {
-          $("#endDate").removeClass("is-invalid");
-        }
-      }
+      $(startDate).attr("min", today);
+      $(endDate).attr("min", today);
     });
+
+    
 
     $("#endDate").on("change", function() {
       var startDate = new Date($("#startDate").val());
