@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bookpage.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1iL4cp4E8fizv+2KCXp8q" crossorigin="anonymous"></script>
+  <title>Aloha Travel!</title>
+  <link rel="icon" href="../images/icons8-paper-plane-94.png" type="image/x-icon">
+</head>
+
+<body>
+  <!---------------Navbar----------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/icons8-paper-plane-94.png" alt="Logo" class="icon-image"> Aloha Travel!
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../destinations/destinations.html">Desinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="bookpage.html">Services</a>
+          </li>
+        </ul>
+        <div class="d-lg-flex align-items-center">
+          <a class="btn btn-outline-light rounded-pill btn-mobile d-lg-none" id="music-toggle1"
+            type="button">
+            <i class="fas fa-music"></i>
+          </a>
+          <a class="btn btn-outline-light rounded-pill btn-desktop d-none d-lg-inline-block" id="music-toggle2"
+            type="button">
+            <i class="fas fa-music"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!---------------Main---------------->
+  <div class="container mt-5">
+    <h1>Our Services</h1>
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="service-card" data-service="localAttractions">
+            <i class="bi bi-binoculars service-icon"></i>
+            <h5 class="service-title">Local Attractions</h5>
+            <p class="service-description">Discover the hidden gems of the local attractions.</p>
+          </div>
+        </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card" data-service="photographyTours">
+          <i class="bi bi-camera-reels service-icon"></i>
+          <h5 class="service-title">Photography Tours</h5>
+          <p class="service-description">Capture breathtaking moments with our specialized photography tours.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card" data-service="groupTours">
+          <i class="bi bi-people service-icon"></i>
+          <h5 class="service-title">Group Tours</h5>
+          <p class="service-description">Enjoy memorable group experiences with our group tours.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card" data-service="sunBeach">
+          <i class="bi bi-sun service-icon"></i>
+          <h5 class="service-title">Sun & Beach</h5>
+          <p class="service-description">Relax and unwind on beautiful sun-kissed beaches.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card" data-service="adventureTours">
+          <i class="bi bi-compass service-icon"></i>
+          <h5 class="service-title">Adventure Tours</h5>
+          <p class="service-description">Embark on thrilling adventures and adrenaline-pumping activities.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="service-card" data-service="culinaryTours">
+          <i class="bi bi-cup service-icon"></i>
+          <h5 class="service-title">Culinary Tours</h5>
+          <p class="service-description">Indulge in the flavors of different cuisines with our culinary tours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container">
+      <h1>Book a Tour</h1>
+      <form id="bookingForm">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" class="form-control" inputmode="numeric" maxlength="12" placeholder="+77074567890" required>
+          </div>
+          <div class="col-md-6">
+            <label for="destination">Destination:</label>
+            <select id="destination" class="form-select" required>
+              <option value="">Select a destination</option>
+              <option value="destination1">Destination 1</option>
+              <option value="destination2">Destination 2</option>
+              <option value="destination3">Destination 3</option>
+            </select>
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" class="form-control" required>
+          </div>
+          <div class="col-md-6">
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" class="form-control" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 row">
+            <label>Services:</label>
+            <div class="form-check col-md-6">
+              <input class="form-check-input service-checkbox" type="checkbox" id="localAttractions">
+              <label class="form-check-label" for="localAttractions">Local Attractions</label>
+            </div>
+            <div class="form-check col-md-6">
+              <input class="form-check-input service-checkbox" type="checkbox" id="photographyTours">
+              <label class="form-check-label" for="photographyTours">Photography Tours</label>
+            </div>
+            <div class="form-check col-md-6">
+              <input class="form-check-input service-checkbox" type="checkbox" id="groupTours">
+              <label class="form-check-label" for="groupTours">Group Tours</label>
+            </div>
+            <div class="form-check col-md-6">
+              <input class="form-check-input service-checkbox" type="checkbox" id="sunBeach">
+              <label class="form-check-label" for="sunBeach">Sun & Beach</label>
+            </div>
+            <div class="form-check col-md-6">
+              <input class="form-check-input service-checkbox" type="checkbox" id="adventureTours">
+              <label class="form-check-label" for="adventureTours">Adventure Tours</label>
+            </div>
+            <div class="form-check col-md-6">
+              <input class="form-check-input service-checkbox" type="checkbox" id="culinaryTours">
+              <label class="form-check-label" for="culinaryTours">Culinary Tours</label>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+  <!---------------Footer----------------->
+  <footer class="footer bg-dark-blue text-dark-cyan">
+    <div class="container">
+      <div class="row">
+        <!-- Contact us section -->
+        <div class="col-lg-6">
+          <h3>Contact us</h3>
+          <p>For any inquiries or support, please reach out to us:</p>
+          <ul>
+            <li>Email: info@example.com</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Address: 123 Main Street, City, Country</li>
+          </ul>
+        </div>
+
+        <!-- Terms of use and copyright section -->
+        <div class="col-lg-6">
+          <h3>Terms of Use &amp; Copyright</h3>
+          <p>Read our <a href="../Core_grade_CS2233_Team6.xlsx" target="_blank">Terms of Use</a> for more information.</p>
+          <span class="text-muted">© 2023 Created by "Team-6" from CS-2233. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="b_script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-toggler').on('click', function () {
+        $('.btn-mobile').toggleClass('d-none');
+      });
+    });
+  </script>
+</body>
+
+</html>

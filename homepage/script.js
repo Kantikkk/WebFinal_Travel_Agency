@@ -5,11 +5,12 @@ document.querySelectorAll('.about .video-container .controls .control-btn').forE
     }
 })
 
-const musicToggle = document.getElementById('music-toggle');
-const audio = new Audio('music/6a85193cd5495ab.mp3');
+const musicToggle1 = document.getElementById('music-toggle1');
+const musicToggle2 = document.getElementById('music-toggle2');
+const audio = new Audio('homepage/music/6a85193cd5495ab.mp3');
 let isPlaying = false;
 
-musicToggle.addEventListener('click', function (event) {
+musicToggle1.addEventListener('click', function (event) {
     event.preventDefault();
     if (isPlaying) {
         audio.pause();
@@ -19,6 +20,18 @@ musicToggle.addEventListener('click', function (event) {
         isPlaying = true;
     }
 });
+
+musicToggle2.addEventListener('click', function (event) {
+    event.preventDefault();
+    if (isPlaying) {
+        audio.pause();
+        isPlaying = false;
+    } else {
+        audio.play();
+        isPlaying = true;
+    }
+});
+
 
 const bookNowLink = document.getElementById('book-now-link');
 
