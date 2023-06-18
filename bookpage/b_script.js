@@ -87,15 +87,13 @@ $(document).ready(function() {
 
       
 
-    $("#startDate").on("change", function() {
-      var startDate = new Date($(this).val());
-      var endDate = new Date($("#endDate").val());
-
-      var today = new Date().toISOString().split("T")[0];
-
-      $(startDate).attr("min", today);
-      $(endDate).attr("min", today);
-    });
+      $(document).ready(function() {
+        var today = new Date().toISOString().split("T")[0];
+      
+        $("#startDate").attr("min", today);
+        $("#endDate").attr("min", today);
+      });
+      
 
     
 
