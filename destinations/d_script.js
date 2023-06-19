@@ -24,3 +24,15 @@ musicToggle2.addEventListener('click', function (event) {
         isPlaying = true;
     }
 });
+
+$(document).ready(function() {
+    $('#carouselExample').carousel();
+  
+    $('.destination-image').click(function() {
+      const modalId = $(this).attr('data-modal');
+      $('#' + modalId).modal('show');
+    });
+  });
+
+  
+  
