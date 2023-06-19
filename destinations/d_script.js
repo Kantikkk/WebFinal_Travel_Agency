@@ -32,6 +32,24 @@ $(document).ready(function() {
       const modalId = $(this).attr('data-modal');
       $('#' + modalId).modal('show');
     });
+
+    $(".carousel-item").mouseover(function () {
+        $(this).find(".carousel-caption").css("opacity", "1");
+      });
+    
+      $(".carousel-item").mouseout(function () {
+        $(this).find(".carousel-caption").css("opacity", "0");
+      });
+  });
+
+  $(document).ready(function() {
+    $(".gallery-image").mouseover(function() {
+      $(this).css("border-color", "darkcyan");
+    });
+  
+    $(".gallery-image").mouseout(function() {
+      $(this).css("border-color", "transparent");
+    });
   });
 
   

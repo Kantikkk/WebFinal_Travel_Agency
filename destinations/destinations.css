@@ -161,6 +161,19 @@ body {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
+.gallery .gallery-image {
+  width: 100%;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.gallery .gallery-image:hover {
+  border-color: lightcyan;
+  cursor: pointer;
+}
+
 
 
 @media (max-width: 991.98px) {
