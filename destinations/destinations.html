@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="destinations.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1iL4cp4E8fizv+2KCXp8q" crossorigin="anonymous"></script>
+  <title>Aloha Travel!</title>
+  <link rel="icon" href="../images/icons8-paper-plane-94.png" type="image/x-icon">
+</head>
+
+<body>
+  <!---------------Navbar----------------->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/icons8-paper-plane-94.png" alt="Logo" class="icon-image"> Aloha Travel!
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="destinations.html">Desinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../bookpage/bookpage.html">Services</a>
+          </li>
+        </ul>
+        <div class="d-lg-flex align-items-center">
+          <a class="btn btn-outline-light rounded-pill btn-mobile d-lg-none" id="music-toggle1"
+            type="button">
+            <i class="fas fa-music"></i>
+          </a>
+          <a class="btn btn-outline-light rounded-pill btn-desktop d-none d-lg-inline-block" id="music-toggle2"
+            type="button">
+            <i class="fas fa-music"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!---------------Main----------------->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+          
+          <div class="container-fluid  mt-4">
+          <div id="carouselExample" class="carousel slide shadow" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/dubai.jpg" class="d-block w-100 carousel-image" alt="Dubai"
+                  data-bs-toggle="modal" data-bs-target="#modalDestination1">
+                  <div class="carousel-caption">
+                    <h3>Dubai</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/new-york.jpg" class="d-block w-100 carousel-image " alt="New York"
+                  data-bs-toggle="modal" data-bs-target="#modalDestination2">
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/seoul.jpg" class="d-block w-100 carousel-image" alt="Seoul"
+                  data-bs-toggle="modal" data-bs-target="#modalDestination3">
+                  <div class="carousel-caption">
+                    <h3>Seoul</h3>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <section id="destinationGallery" class="mt-5">
+        <h2 class="text-center">All Destinations</h2>
+          <hr>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="destination-item text-center" data-bs-toggle="modal" data-bs-target="#modalDestination1">
+              <img src="images/dubai-thumbnail.jpg" alt="Dubai" class="img-fluid rounded border gallery-image">
+              <h3>Dubai</h3>
+              <p>Dubai, the UAE's largest city, is a global business hub with futuristic architecture, luxury shopping, and vibrant nightlife.              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="destination-item text-center" data-bs-toggle="modal" data-bs-target="#modalDestination2">
+              <img src="images/new-york-thumbnail.jpg" alt="New York" class="img-fluid rounded border gallery-image">
+              <h3>New York</h3>
+              <p>New York City, often referred to as the "Big Apple," is one of the most vibrant and diverse cities in the world.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="destination-item text-center" data-bs-toggle="modal" data-bs-target="#modalDestination3">
+              <img src="images/seoul-thumbnail.jpg" alt="Seoul" class="img-fluid rounded border gallery-image">
+              <h3>Seoul</h3>
+              <p>Seoul, the capital city of South Korea, is a fascinating blend of ancient traditions and modern innovations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="destinationModals">
+        
+        <div class="modal fade" id="modalDestination1" tabindex="-1" aria-labelledby="modalDestination1Label"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalDestination1Label">Dubai</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="images/dubai-modal.jpg" alt="Dubai" class="img-fluid mb-3 rounded">
+                <p>Dubai is a city and emirate in the United Arab Emirates known for its luxury shopping, ultramodern architecture, and vibrant nightlife scene. The Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.</p>
+                <table class="table table-striped table-bordered">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>Date</th>
+                      <th>Activity</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Day 1</td>
+                      <td>Visit Burj Khalifa</td>
+                    </tr>
+                    <tr>
+                      <td>Day 2</td>
+                      <td>Explore Dubai Mall</td>
+                    </tr>
+                    <tr>
+                      <td>Day 3</td>
+                      <td>Relax on Jumeirah Beach</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="modal fade" id="modalDestination2" tabindex="-1" aria-labelledby="modalDestination2Label"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalDestination2Label">New York</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="images/new-york-modal.jpg" alt="New York" class="img-fluid mb-3 rounded">
+                <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park.</p>
+                <table class="table table-striped table-bordered">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>Date</th>
+                      <th>Activity</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Day 1</td>
+                      <td>Explore Times Square</td>
+                    </tr>
+                    <tr>
+                      <td>Day 2</td>
+                      <td>Visit the Statue of Liberty</td>
+                    </tr>
+                    <tr>
+                      <td>Day 3</td>
+                      <td>Explore Central Park</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="modal fade" id="modalDestination3" tabindex="-1" aria-labelledby="modalDestination3Label"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalDestination3Label">Seoul</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="images/seoul-modal.jpg" alt="Seoul" class="img-fluid mb-3 rounded">
+                <p>Seoul, the capital city of South Korea, is a vibrant metropolis where ancient traditions meet modern technology. From historic palaces and temples to bustling street markets and futuristic skyscrapers, Seoul offers a unique blend of past and present. Discover the rich cultural heritage, indulge in delicious Korean cuisine, and immerse yourself in the energetic atmosphere of this dynamic city.</p>
+                <table class="table table-striped table-bordered">
+                  <thead class="table-dark">
+                    <tr>
+                      <th>Date</th>
+                      <th>Activity</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Day 1</td>
+                      <td>Visit Gyeongbokgung Palace</td>
+                    </tr>
+                    <tr>
+                      <td>Day 2</td>
+                      <td>Explore Myeongdong Shopping Street</td>
+                    </tr>
+                    <tr>
+                      <td>Day 3</td>
+                      <td>Experience the Nightlife in Hongdae</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+
+  <!---------------Footer----------------->
+  <footer class="footer bg-dark-blue text-dark-cyan">
+    <div class="container">
+      <div class="row">
+        <!-- Contact us section -->
+        <div class="col-lg-6">
+          <h3>Contact us</h3>
+          <p>For any inquiries or support, please reach out to us:</p>
+          <ul>
+            <li>Email: info@example.com</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Address: 123 Main Street, City, Country</li>
+          </ul>
+        </div>
+
+        <!-- Terms of use and copyright section -->
+        <div class="col-lg-6">
+          <h3>Terms of Use &amp; Copyright</h3>
+          <p>Read our <a href="../Core_grade_CS2233_Team6.pdf" target="_blank">Terms of Use</a> for more information.</p>
+          <span class="text-muted">© 2023 Created by "Team-6" from CS-2233. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="d_script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-toggler').on('click', function () {
+        $('.btn-mobile').toggleClass('d-none');
+      });
+    });
+  </script>
+</body>
+
+</html>

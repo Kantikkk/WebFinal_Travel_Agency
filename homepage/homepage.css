@@ -19,6 +19,18 @@ html {
     scroll-padding-top: 9rem;
 }
 
+html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #111;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #29d9d5;
+  }
+
 body {
     background: #111;
     overflow-x: hidden;
@@ -226,7 +238,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    width: 350px;
+    font-size: 1.7rem;
+    width: 230px;
     height: 40px;
     margin: 30px auto 40px;
 
@@ -305,7 +318,7 @@ body {
 }
 
 .review .box {
-    flex: 1 1 20rem;
+    flex: 1 20 20rem;
     border-radius: 2rem;
     padding: 1rem;
     background-color: #15214d;
